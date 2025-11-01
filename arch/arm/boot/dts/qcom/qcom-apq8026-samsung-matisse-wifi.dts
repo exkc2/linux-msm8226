@@ -29,3 +29,7 @@
 &tsp_en1_default_state {
 	pins = "gpio73";
 };
+
+&modem {
+	status = "okay";
+};
