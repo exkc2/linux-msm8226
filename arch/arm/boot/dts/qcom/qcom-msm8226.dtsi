@@ -130,8 +130,19 @@
 		opp-787200000 {
 			opp-hz = /bits/ 64 <787200000>;
 		};
+		
+		opp-998400000 {
+			opp-hz = /bits/ 64 <998400000>;
+		};
+		
+		opp-1094400000 {
+			opp-hz = /bits/ 64 <1094400000>;
+		};
+		
+		opp-1190400000 {
+			opp-hz = /bits/ 64 <1190400000>;
+		};
 
-		/* Higher CPU frequencies need speedbin support */
 	};
 
 	pmu {
