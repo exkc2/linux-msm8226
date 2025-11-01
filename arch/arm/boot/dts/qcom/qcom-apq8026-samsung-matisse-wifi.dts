@@ -90,3 +90,7 @@
 		bias-disable;
 	};
 };
+
+&modem {
+	status = "okay";
+};
