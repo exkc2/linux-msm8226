@@ -30,6 +30,30 @@
 	pins = "gpio73";
 };
 
-&modem {
+&gpu {
 	status = "okay";
 };
+
+&mdss {
+	status = "okay";
+};
+
+&mdss_dsi0 {
+
+	panel@0 {
+		compatible = "exkc,hack";
+		reg = <0>;
+
+		port {
+			panel_in: endpoint {
+				remote-endpoint = <&mdss_dsi0_out>;
+			};
+		};
+	};
+};
+
+&mdss_dsi0_out {
+	remote-endpoint = <&panel_in>;
+	data-lanes = <0>;
+};
+
